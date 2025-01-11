@@ -1,0 +1,70 @@
+
+.delete-operation-block {
+   display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.delete-operation-popup {
+    z-index: 2;
+    left: calc(50% - 265px);
+    top: calc(50% - 93px);
+    position: absolute;
+    border-radius: 12px;
+    width: 530px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.delete-popup-text {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.delete-operation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.sort-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.sort-interval {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sort-info button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.sort-info .interval-from,
+.sort-info .interval-to {
+    width: 150px;
+}
+
+.sort-info .btn-apply-interval {
+
+}
+.income{
+    color: green !important;
+}
+.expense{
+    color: red !important;
+}

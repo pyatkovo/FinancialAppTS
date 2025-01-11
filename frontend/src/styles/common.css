@@ -1,0 +1,154 @@
+.block {
+    margin-left: 220px;
+    padding: 100px 60px 30px 60px;
+}
+
+/*.loading {*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.3s ease-in-out;*/
+/*}*/
+
+/*#content:not(.loading) {*/
+/*    opacity: 1;*/
+/*}*/
+
+
+.nav-link {
+    padding: 10px;
+    color: black;
+}
+
+.details-link-drop{
+    border: 1px solid #0d6efd;
+}
+
+.link-sidebar{
+   text-decoration: none;
+
+   color: black;
+}
+.link-sidebar:hover{
+    text-decoration: none;
+    background-color: #0d6efd;
+    color: white;
+ }
+
+.details-link-drop.active summary {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 4px 4px 0 0; /* Скругления только сверху */
+}
+
+.details-link-drop summary:hover {
+    color: white;
+    background-color: #0d6efd;
+    border-radius: 4px;
+}
+.details-link-drop.active summary:hover {
+    color: white;
+    background-color: #0d6efd;
+    border-radius: 4px 4px 0 0;
+}
+
+.link-sidebar {
+    border-radius: 0; /* Убираем скругления внутри dropdown */
+}
+
+.link-sidebar:first-of-type {
+    border-radius: 0 0 4px 4px; /* Нижние скругления только для последней ссылки */
+}
+
+.link-sidebar:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Добавляем нулевой margin для перехода между элементами */
+.details-link-drop.active summary,
+.link-sidebar {
+    margin: 0;
+    padding: 10px; /* Общая высота для согласованности */
+}
+
+
+
+.sidebar-menu {
+    border-right: 1px solid #D9D9D9;
+}
+
+.sidebar-logo-image {
+    width: 100px;
+    height: 40px;
+}
+
+.sidebar-menu-line {
+    border-top: 1px solid #D9D9D9;
+    width: 220px;
+    margin: 20px 0 20px -16px;
+
+}
+
+
+
+.header-block {
+    margin-bottom: 40px;
+}
+
+.btn-filter {
+    color: #6C757D;
+    text-align: center;
+    width: 100px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 1px solid #6C757D;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    /* Убирает контур фокуса при клике */
+}
+
+.btn-filter.active {
+    color: white;
+    background-color: #6C757D;
+    /* Красный цвет для активного фильтра */
+}
+
+.sort-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sort-interval {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    gap: 5px;
+}
+
+.sort-interval span {
+    color: #6C757D;
+    text-decoration: underline;
+}
+
+
+/*------DIAGRAMS-------------*/
+
+
+#number-operation {
+    width: 120px;
+}
+
+.finance-table {
+    text-align: center;
+}
+
+
+/*------404-------------*/
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }

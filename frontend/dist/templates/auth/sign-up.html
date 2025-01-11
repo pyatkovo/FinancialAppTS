@@ -1,0 +1,70 @@
+
+<!--    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css">-->
+<!--    <link rel="stylesheet" href="../../styles/auth.css">-->
+<!--    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+
+<div class="login-box">
+    <div class="auth-logo mb-3">
+        <img src="../../static/logo.png" alt="Logo">
+    </div>
+    <div class="auth-header mb-3"><h1>Создайте аккаунт</h1></div>
+    <form class="auth-inputs">
+        <div class="mb-2">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="far fa-user"></i></span>
+                <input type="text" id="firstName" class="form-control" aria-describedby="inputGroupPrepend"
+                       placeholder="Имя" required>
+                <div class="invalid-feedback">
+                    Введите ваше Имя
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="far fa-user"></i></span>
+                <input type="text" id="lastName" class="form-control" aria-describedby="inputGroupPrepend"
+                       placeholder="Фамилия" required>
+                <div class="invalid-feedback">
+                    Введите вашу Фамилию
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fas fa-envelope-open "></i></span>
+                <input type="text" id="email" class="form-control" aria-describedby="inputGroupPrepend"
+                       placeholder="Электронная почта" required>
+                <div class="invalid-feedback">
+                    Введите электронную почту
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+            <div class="input-group has-validation">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" id="password" class="form-control" aria-describedby="inputGroupPrepend" placeholder="Пароль"
+                       required>
+                <div class="invalid-feedback">
+                    Введите корректно пароль
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+        <div class="input-group has-validation">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input type="password" id="password-repeat" class="form-control" aria-describedby="inputGroupPrepend" placeholder="Подтверждение пароля"
+                   required>
+            <div class="invalid-feedback">
+                Пароли не совпадают
+            </div>
+        </div>
+    </div>
+        <div class="login-actions mt-4">
+            <button type="button" class="btn btn-primary btn-block w-100" id="process-button">Войти</button>
+        </div>
+    </form>
+    <div class="social-auth-links mt-2">
+        <p>Уже есть аккаунт? <a href="/login"> Войдите в систему</a></p>
+    </div>
+</div>

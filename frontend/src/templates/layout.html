@@ -1,0 +1,51 @@
+<div class="sidebar">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light position-fixed sidebar-menu bg-white"
+         style="width: 220px;height: 100vh;">
+        <a href="/" class="align-items-center mb-3 mt-3 link-dark text-decoration-none text-center">
+            <img src="../../static/logo.png" alt="Logo" class="sidebar-logo-image">
+        </a>
+        <div class="sidebar-menu-line"></div>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    Главная
+                </a>
+            </li>
+            <li>
+                <a href="/finances" class="nav-link">
+                    <i class="fa-solid fa-coins"></i>
+                    &nbsp;Доходы&nbsp;&&nbsp;Расходы
+                </a>
+            </li>
+            <li>
+                <details class="details-link-drop rounded">
+                    <summary class="p-2 position-relative">Категории</summary>
+                    <a href="/income" class="income-link link-sidebar d-block p-2 nav-link">Доходы</a>
+                    <a href="/expense" class="expense-link link-sidebar d-block p-2 rounded nav-link">Расходы</a>
+                </details>
+            </li>
+        </ul>
+
+        <div class="balance">Баланс: <a href="/" class="text-decoration-none" id="balance">500 $</a></div>
+
+        <div class="sidebar-menu-line"></div>
+
+        <div class="dropdown">
+            <a href="/" class="d-flex align-items-center link-dark text-decoration-none" id="dropdownUser2"
+               aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong id="fullName"></strong>
+            </a>
+            <a type="button" class="btn btn-sm btn-outline-danger mt-3" id="logout-button" href="/logout">Выйти
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+                    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content-layout">
+
+</div>

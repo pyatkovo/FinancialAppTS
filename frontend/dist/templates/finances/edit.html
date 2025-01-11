@@ -1,0 +1,45 @@
+
+<!--<div class="block">-->
+<!--    <h1 class="header-block">Редактирование дохода/расхода</h1>-->
+<!--    <div class="create-income">-->
+<!--        <input type="text" placeholder="Тип..." class="form-control create-category-input mb-2">-->
+<!--        <select class="form-select create-category-input mb-2" aria-label="Default select example">-->
+<!--            <option selected>Категория...</option>-->
+<!--            <option value="Доход">Доход</option>-->
+<!--            <option value="Расход">Расход</option>-->
+<!--        </select>-->
+<!--        <input type="number" placeholder="Сумма в $..." class="form-control create-category-input mb-2">-->
+<!--        <input type="date" placeholder="Дата..." class="form-control create-category-input mb-2"-->
+<!--               data-provide="datepicker">-->
+<!--        <input type="text" placeholder="Комментарий..." class="form-control create-category-input mb-2">-->
+
+<!--        <div class="create-category-actions mt-3">-->
+<!--            <button type="button" class="btn btn-success">Создать</button>-->
+<!--            <button type="button" class="btn btn-danger">Отмена</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="block">
+    <h1 class="header-block">Редактирование дохода/расхода</h1>
+    <div class="alert alert-danger error-container" >Заполните все поля!</div>
+    <div class="create-income">
+        <select id="type-select" class="form-select create-category-input mb-2" aria-label="Default select example">
+            <option selected>Тип</option>
+            <option value="income">Доход</option>
+            <option value="expense">Расход</option>
+        </select>
+        <select id="category-select" class="form-select create-category-input mb-2" aria-label="Категория">
+            <option selected disabled>Категория...</option>
+        </select>
+        <input id="amount-operation" type="number" placeholder="Сумма в $..." class="form-control create-category-input mb-2">
+        <input id="date-operation" type="date" placeholder="Дата..." class="form-control create-category-input mb-2"
+               data-provide="datepicker">
+        <input id="comment-operation" type="text" placeholder="Комментарий..." class="form-control create-category-input mb-2">
+
+        <div class="create-category-actions mt-3">
+            <a type="button" class="btn btn-success" id="btn-create-operation">Создать</a>
+            <a type="button" class="btn btn-danger" href="/finances">Отмена</a>
+        </div>
+    </div>
+</div>

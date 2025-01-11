@@ -1,0 +1,93 @@
+.category-cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.category-card{
+    width: 352px;
+    border: 1px solid #CED4DA;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.category-card-actions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.category-card-create{
+    width: 352px;
+    min-height: 122px;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+    text-align: center;
+    align-content: center;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+.category-card-create:hover{
+    border: 3px solid #0086ff;
+    transition: 0.2s;
+}
+
+.delete-category-block{
+display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.delete-category-popup{
+    z-index: 2;
+    left: calc(50% - 265px);
+    top: calc(50% - 93px);
+    position: absolute;
+    border-radius: 12px;
+    width: 530px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.delete-popup-text{
+
+text-align: center;
+margin-bottom: 20px;
+}
+.delete-category-actions{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.create-category-input{
+   width: 400px;
+}
+
+.create-category-actions{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.edit-category-input{
+    width: 400px;
+ }
+ 
+ .edit-category-actions{
+     display: flex;
+     justify-content: flex-start;
+     gap: 10px;
+ }
+
+.error-container{
+    width: 400px;
+    display: none;
+}

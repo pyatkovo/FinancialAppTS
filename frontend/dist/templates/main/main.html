@@ -1,0 +1,41 @@
+<!--    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css">-->
+<!--    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">-->
+<!--    <link rel="stylesheet" href="../../styles/common.css">-->
+
+<!--    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>-->
+<!---------------Content------------------------------>
+<div class="block">
+    <h1 class="header-block">Главная</h1>
+    <div class="sort-info mb-4">
+        <button type="button" class="period-btn btn btn-outline-primary active" data-period="today">Сегодня</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="week">Неделя</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="month">Месяц</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="year">Год</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="all">Все</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="interval">Интервал</button>
+
+        <div class="sort-interval mt-2" style="display: none;">
+            <strong>c</strong>
+            <input type="date" class="form-control form-control-sm interval-from">
+            <strong>по</strong>
+            <input type="date" class="form-control form-control-sm interval-to">
+            <button type="button" class="btn btn-primary btn-sm btn-apply-interval">Применить</button>
+        </div>
+    </div>
+    <div class="diagrams">
+        <div class="diagram-income">
+            <h3 class="diagram-title">Доходы</h3>
+            <div class="alert alert-danger income-error-container">Нет данных для графика</div>
+            <canvas id="myIncomeChart"></canvas>
+        </div>
+
+<!--        <div class="vertical-line"></div>-->
+
+        <div class="diagram-expense">
+            <h3 class="diagram-title">Расходы</h3>
+            <div class="alert alert-danger expense-error-container">Нет данных для графика</div>
+            <canvas id="myExpenseChart"></canvas>
+        </div>
+    </div>
+</div>

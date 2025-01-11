@@ -1,0 +1,57 @@
+<!--<link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css">-->
+<!--<link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">-->
+<!--<link rel="stylesheet" href="../../styles/common.css">-->
+<!--<link rel="stylesheet" href="../../styles/list.css">-->
+
+<!---------------Content------------------------------>
+<div class="block">
+    <h1 class="header-block">Доходы & Расходы</h1>
+    <div class="finance-actions mb-5">
+        <a type="button" class="btn btn-success" href="/finances/create">Создать доход</a>
+        <a type="button" class="btn btn-danger" href="/finances/create">Создать расход</a>
+    </div>
+    <div class="sort-info mb-4">
+        <button type="button" class="period-btn btn btn-outline-primary active" data-period="today">Сегодня</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="week">Неделя</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="month">Месяц</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="year">Год</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="all">Все</button>
+        <button type="button" class="period-btn btn btn-outline-primary" data-period="interval">Интервал</button>
+
+        <div class="sort-interval mt-2" style="display: none;">
+                <strong>c</strong>
+                <input type="date" class="form-control form-control-sm interval-from">
+                <strong>по</strong>
+                <input type="date" class="form-control form-control-sm interval-to">
+            <button type="button" class="btn btn-primary btn-sm btn-apply-interval">Применить</button>
+        </div>
+    </div>
+    <div class="finance-table">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">№ операции</th>
+                <th scope="col">Тип</th>
+                <th scope="col">Категория</th>
+                <th scope="col">Сумма</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Комментарий</th>
+                <th scope="col">Действия</th>
+            </tr>
+            </thead>
+            <tbody id="finance-table-body">
+            <!-- Записи будут добавлены здесь через JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="delete-operation-block" id="delete-operation-popup">
+    <div class="delete-operation-popup">
+        <p class="delete-popup-text">Вы действительно хотите удалить операцию?</p>
+        <div class="delete-operation-actions">
+            <button type="button" class="btn btn-success" id="confirm-delete-operation">Да, удалить</button>
+            <button type="button" class="btn btn-danger" id="cancel-delete-operation">Не удалять</button>
+        </div>
+    </div>
+</div>

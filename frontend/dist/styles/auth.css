@@ -1,0 +1,16 @@
+
+.input-group-text{
+    width: 38px;
+}
+.login-box{
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 300px);
+    width: 400px;
+}
+h1{
+    text-align: center;
+}
+.auth-logo{
+    text-align: center;
+}
